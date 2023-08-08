@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Great article! Looking forward to more.",
+    "user_id": 2,
+    "post_id": 1
+  },
+  {
+    "content": "Thanks for explaining MVC in detail.",
+    "user_id": 1,
+    "post_id": 1
+  },
+  {
+    "content": "React has really simplified frontend development.",
+    "user_id": 1,
+    "post_id": 2
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Introduction to MVC Architecture",
+    "content": "MVC stands for Model-View-Controller...",
+    "user_id": 1
+  },
+  {
+    "title": "The Power of React Framework",
+    "content": "React has revolutionized frontend development...",
+    "user_id": 2
+  }
+]

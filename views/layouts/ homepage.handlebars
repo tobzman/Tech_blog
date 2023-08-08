@@ -1,0 +1,44 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tech Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          {{#if loggedIn}}
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/logout">Logout</a></li>
+          {{else}}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Signup</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{#each posts}}
+        <article class="post">
+          <h2>{{title}}</h2>
+          <p class="post-meta">Posted by
+            {{User.username}}
+            on
+            {{formatDate created_at}}</p>
+          <div class="post-content">{{truncateText content 200}}</div>
+          <a href="/post/{{id}}">Read more</a>
+        </article>
+      {{/each}}
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Tech Blog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
