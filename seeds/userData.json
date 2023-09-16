@@ -1,12 +1,52 @@
 [
   {
-    "username": "john_doe",
-    "email": "john@example.com",
+    "username": "techguru123",
+    "email": "techguru123@example.com",
     "password": "password123"
   },
   {
-    "username": "jane_smith",
-    "email": "jane@example.com",
-    "password": "securepass456"
+    "username": "devmaster",
+    "email": "devmaster@example.com",
+    "password": "dev123"
+  },
+  {
+    "username": "coder123",
+    "email": "coder123@example.com",
+    "password": "codingrocks"
+  },
+  {
+    "username": "geekgirl",
+    "email": "geekgirl@example.com",
+    "password": "geek123"
+  },
+  {
+    "username": "jslover",
+    "email": "jslover@example.com",
+    "password": "ilovejs"
+  },
+  {
+    "username": "pythonista",
+    "email": "pythonista@example.com",
+    "password": "python123"
+  },
+  {
+    "username": "webwizard",
+    "email": "webwizard@example.com",
+    "password": "webdev456"
+  },
+  {
+    "username": "dataninja",
+    "email": "dataninja@example.com",
+    "password": "data456"
+  },
+  {
+    "username": "cloudhacker",
+    "email": "cloudhacker@example.com",
+    "password": "cloudpass"
+  },
+  {
+    "username": "iotexplorer",
+    "email": "iotexplorer@example.com",
+    "password": "iotrocks"
   }
 ]
