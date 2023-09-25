@@ -1,33 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{pageTitle}}</title>
+    <title>Blogs</title>
+    <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Tech Blog</h1>
       <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
+        <div class="header-container">
+          <a href="/" class="nav-link">
+            <h1 class="hover-effect">
+              <span class="header-logo">B</span>logged
+            </h1>
+          </a>
+        </div>
+        <ul class="nav-buttons">
+          <li class="hover-effect">
+            <a class="account-btn outline" href="/">Home</a>
+          </li>
           {{#if loggedIn}}
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/logout">Logout</a></li>
+          <li>
+            <button id="logout" class="account-btn hover-effect">Logout</button>
+          </li>
           {{else}}
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signup">Signup</a></li>
           {{/if}}
         </ul>
+        <div class="button-container">
+          {{#if loggedIn}}
+          <a href="/account" class="account">
+            <p class="user">{{user}}</p>
+          </a>
+          {{else}}
+          <button class="btn login hover-effect">
+            <a class="nav-link" href="/login">Login / SignUp</a>
+          </button>
+          {{/if}}
+        </div>
       </nav>
     </header>
-
-    <main>
-      {{{body}}}
-    </main>
-
-    <footer>
-      <p>&copy; 2023 Tech Blog. All rights reserved.</p>
-    </footer>
+    {{{body}}}
+    <script src="/Public/js/login.js"></script>
+    <script src="/Public/js/logout.js"></script>
   </body>
 </html>

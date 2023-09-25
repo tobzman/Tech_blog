@@ -1,0 +1,38 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optionally, set a baseline font size and line height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Reset list styles (bullet points, numbering) */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove underlines from links */
+a {
+  text-decoration: none;
+}
+
+/* Reset heading margins (optional) */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* Optionally, reset form elements to avoid unexpected styles */
+input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Additional resets can be added as needed for specific projects */

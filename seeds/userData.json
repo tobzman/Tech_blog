@@ -1,52 +1,54 @@
-[
+const userData = [
   {
-    "username": "techguru123",
-    "email": "techguru123@example.com",
-    "password": "password123"
+    username: "techguru123",
+    email: "techguru123@example.com",
+    password: "password123",
   },
   {
-    "username": "devmaster",
-    "email": "devmaster@example.com",
-    "password": "dev123"
+    username: "devmaster",
+    email: "devmaster@example.com",
+    password: "dev123",
   },
   {
-    "username": "coder123",
-    "email": "coder123@example.com",
-    "password": "codingrocks"
+    username: "coder123",
+    email: "coder123@example.com",
+    password: "codingrocks",
   },
   {
-    "username": "geekgirl",
-    "email": "geekgirl@example.com",
-    "password": "geek123"
+    username: "geekgirl",
+    email: "geekgirl@example.com",
+    password: "geek123",
   },
   {
-    "username": "jslover",
-    "email": "jslover@example.com",
-    "password": "ilovejs"
+    username: "jslover",
+    email: "jslover@example.com",
+    password: "ilovejs",
   },
   {
-    "username": "pythonista",
-    "email": "pythonista@example.com",
-    "password": "python123"
+    username: "pythonista",
+    email: "pythonista@example.com",
+    password: "python123",
   },
   {
-    "username": "webwizard",
-    "email": "webwizard@example.com",
-    "password": "webdev456"
+    username: "webwizard",
+    email: "webwizard@example.com",
+    password: "webdev456",
   },
   {
-    "username": "dataninja",
-    "email": "dataninja@example.com",
-    "password": "data456"
+    username: "dataninja",
+    email: "dataninja@example.com",
+    password: "data456",
   },
   {
-    "username": "cloudhacker",
-    "email": "cloudhacker@example.com",
-    "password": "cloudpass"
+    username: "cloudhacker",
+    email: "cloudhacker@example.com",
+    password: "cloudpass",
   },
   {
-    "username": "iotexplorer",
-    "email": "iotexplorer@example.com",
-    "password": "iotrocks"
-  }
-]
+    username: "iotexplorer",
+    email: "iotexplorer@example.com",
+    password: "iotrocks",
+  },
+];
+
+module.exports = userData;

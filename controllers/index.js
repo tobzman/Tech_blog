@@ -1,15 +1,10 @@
-const express = require("express");
+const router = require("express").Router();
 
-const router = express.Router();
 
-// Import route modules
-const homeRoutes = require("./homeRoutes");
 const apiRoutes = require("./api");
-// Import other route modules as needed
+const homeRoutes = require("./homeRoutes");
 
-// Mount route modules
 router.use("/", homeRoutes);
 router.use("/api", apiRoutes);
-// Mount other route modules as needed
 
 module.exports = router;

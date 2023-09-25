@@ -1,0 +1,84 @@
+const blogData = [
+  {
+    title: "Introduction to MVC Architecture",
+    content: "MVC stands for Model-View-Controller...",
+    user_id: 1,
+  },
+  {
+    title: "The Power of React Framework",
+    content: "React has revolutionized frontend development...",
+    user_id: 2,
+  },
+  {
+    title: "Getting Started with Node.js",
+    content: "Node.js is a runtime that allows you to run JavaScript...",
+    user_id: 3,
+  },
+  {
+    title: "Python vs. JavaScript: A Comparison",
+    content: "Python and JavaScript are two popular programming languages...",
+    user_id: 4,
+  },
+  {
+    title: "Building RESTful APIs with Express.js",
+    content: "Express.js is a minimal and flexible Node.js web application framework...",
+    user_id: 1,
+  },
+  {
+    title: "The Future of Artificial Intelligence",
+    content: "AI is advancing rapidly and reshaping various industries...",
+    user_id: 2,
+  },
+  {
+    title: "Web Security Best Practices",
+    content: "Protecting your web applications from security threats...",
+    user_id: 3,
+  },
+  {
+    title: "Data Science and Machine Learning",
+    content: "Exploring the exciting field of data science and ML...",
+    user_id: 4,
+  },
+  {
+    title: "JavaScript Promises and Async/Await",
+    content: "Learn how to work with asynchronous code in JavaScript...",
+    user_id: 1,
+  },
+  {
+    title: "Diving into Machine Learning Algorithms",
+    content: "Exploring popular machine learning algorithms like K-Means and Decision Trees...",
+    user_id: 2,
+  },
+  {
+    title: "Building a Responsive Web Design",
+    content: "Tips and tricks for creating websites that look great on all devices...",
+    user_id: 3,
+  },
+  {
+    title: "The Future of Quantum Computing",
+    content: "Quantum computing is poised to change the world of computation...",
+    user_id: 4,
+  },
+  {
+    title: "Database Management with SQL",
+    content: "Understanding SQL databases and performing CRUD operations...",
+    user_id: 1,
+  },
+  {
+    title: "Securing Your Cloud Infrastructure",
+    content: "Best practices for securing cloud-based applications and data...",
+    user_id: 2,
+  },
+  {
+    title: "Getting Started with Python Flask",
+    content: "A beginner's guide to building web applications with Flask...",
+    user_id: 3,
+  },
+  {
+    title: "Exploring the Internet of Things (IoT)",
+    content: "How IoT is connecting devices and changing our daily lives...",
+    user_id: 4,
+  },
+];
+
+// You can now use the 'blogData' array in your code.

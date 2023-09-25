@@ -1,18 +1,27 @@
-// Format a date as "Month Day, Year"
-const formatDate = (date) => {
-  return new Date(date).toLocaleDateString(undefined, {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+const format_time = (date) => {
+  return date.toLocaleTimeString();
+};
+
+const format_date = (date) => {
+  const newDate = new Date(date.setFullYear(date.getFullYear()));
+
+  return newDate.toLocaleDateString("en", {
+    year: "2-digit",
+    day: "2-digit",
+    month: "2-digit",
   });
 };
 
-// Truncate a string to a specified length
-const truncateText = (text, maxLength) => {
-  if (text.length > maxLength) {
-    return text.substring(0, maxLength) + "...";
-  }
-  return text;
+const format_comment_date = (date) => {
+  const newDate = new Date(date);
+
+  return newDate.toLocaleDateString("en", {
+    hour: "2-digit",
+    minute: "2-digit",
+    year: "2-digit",
+    day: "2-digit",
+    month: "2-digit",
+  });
 };
 
-module.exports = { formatDate, truncateText };
+module.exports = { format_time, format_date, format_comment_date };

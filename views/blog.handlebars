@@ -1,0 +1,30 @@
+<!-- Blog Article -->
+<article class="blog-article" data-id="{{blog.id}}">
+  <h2 class="blog-title">{{blog.title}}</h2>
+  <p class="blog-author">{{blog.user.username}}</p>
+  <p class="blog-content">{{blog.content}}</p>
+</article>
+
+<!-- Comment Section -->
+<div class="comment-container">
+  <h3>Comment section:</h3>
+  <form>
+    <input type="text" id="add-comment" placeholder="Add a comment...">
+  </form>
+  {{#each commentData as |comment|}}
+    {{> comment-partial}}
+  {{/each}}
+</div>
+
+<!-- Other Blogs by the Same User -->
+<aside class="other-blogs">
+  {{#if userBlogs}}
+    <h3>Other blogs by {{blog.user.username}}</h3>
+    {{#each userBlogs}}
+      {{> blogCards}}
+    {{/each}}
+  {{/if}}
+</aside>
+
+<!-- JavaScript -->
+<script src="/Public/js/blog.js"></script>
