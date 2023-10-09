@@ -3,8 +3,7 @@ const { Blog, User, Comment } = require("../models");
 const sequelize = require("../config/connection");
 const withAuth = require("../utils/auth");
 
-// Route: GET /
-// Homepage displaying existing blog posts
+
 router.get("/", withAuth, async (req, res) => {
   try {
     const blogData = await Blog.findAll({
@@ -30,8 +29,6 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
-// Route: GET /blog/:id
-// Display details of a specific blog post
 router.get("/blog/:id", withAuth, async (req, res) => {
   try {
     const dbBlogData = await Blog.findByPk(req.params.id, {
@@ -77,6 +74,6 @@ router.get("/blog/:id", withAuth, async (req, res) => {
   }
 });
 
-// ... Other routes ...
+
 
 module.exports = router;

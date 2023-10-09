@@ -1,28 +1,3 @@
--- Create the Users table
-CREATE TABLE IF NOT EXISTS Users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(50) NOT NULL,
-  email VARCHAR(100) NOT NULL,
-  password VARCHAR(100) NOT NULL
-);
+DROP DATABASE IF EXISTS crowdfund_db;
 
--- Create the BlogPosts table
-CREATE TABLE IF NOT EXISTS BlogPosts (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  content TEXT NOT NULL,
-  user_id INT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (user_id) REFERENCES Users(id) ON DELETE CASCADE
-);
-
--- Create the Comments table
-CREATE TABLE IF NOT EXISTS Comments (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  content TEXT NOT NULL,
-  user_id INT,
-  post_id INT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (user_id) REFERENCES Users(id) ON DELETE CASCADE,
-  FOREIGN KEY (post_id) REFERENCES BlogPosts(id) ON DELETE CASCADE
-);
+CREATE DATABASE crowdfund_db;
